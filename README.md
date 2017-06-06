@@ -14,7 +14,7 @@ _Sample Input JSON:_
 }
 ```
 
-_Returned JSON:_
+_Sample Output JSON:_
 ```json
 {
     "fileName": "voicemail-34.wav",
@@ -41,15 +41,15 @@ To do this, go to Platform Features > Deployment Options > Setup > Choose Source
 ### Step 3: Set environment variables
 In platform features, select Application Settings and enter the following environment variables:
 
-1. __storage_account_name__ - The storage account name of the blob storage account where the audio files will be stored.
-1. __storage_account_key__ - The 
+1. __storage_account_name__ - The storage account name of the Azure Blob Storage account where the audio files will be stored.
+1. __storage_account_key__ - The storage key for the Azure Blob Storage account
 1. __cris_primary_key__ - Primary key for CRIS subscription
 1. __cris_secondary_key__ - Secondary key for CRIS subscription
-    ![Alt text](/img/keys.png?raw=true "CRIS Storage Keys")    
+    ![Alt text](/images/keys.png?raw=true "CRIS Storage Keys")    
 
 1. __cris_recog_url__ - Copy the URL from the deployed CRIS model (see yellow highlighted section below)
 
-    ![Alt text](/img/url.png?raw=true "URL for Recognition")
+    ![Alt text](/images/url.png?raw=true "URL for Recognition")
 
 ## Considerations / Disclaimers
 Currently, every function call logs the transcribed text. If this is an issue for your use-case look for the following code and remove it.
