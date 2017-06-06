@@ -40,7 +40,7 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
 
     // Return results JSON
     return req.CreateResponse(HttpStatusCode.OK, new {
-        audio_text = $"{audioText}",
-        file_name = $"{data.fileName}"
+        audioText = $"{audioText}",
+        fileName = $"{data.fileName}"
     });
 }
